@@ -1,0 +1,15 @@
+{{!-- app/templates/home.hbs --}}
+{{page-title "Home Shoes"}}
+
+<h2 class="home_title">Promoções</h2>
+
+<div class="items_container">
+  {{#each this.model as |item|}}
+    <div class="item_card">
+      <img src={{item.image}} alt={{item.title}} class="item_image"/>
+      <h3 class="item_title">{{item.title}}</h3>
+      <p class="item_price">${{item.price}}</p>
+      <p class="item_description">{{item.description}}</p>
+    </div>
+  {{/each}}
+</div>

@@ -1,0 +1,18 @@
+{{!--app/templates/signin.hbs--}}
+{{page-title "Cadastro"}}
+<form class="form_signup">
+  <h3>Cadastre-se</h3>
+  <label>Nome:</label>
+  <input type="text" value={{this.name}} />
+
+  <label>Email:</label>
+  <input type="email" value={{this.email}} />
+
+  <label>Senha:</label>
+  <input type="password" value={{this.password}} />
+
+  <label>CPF:</label>
+  <input type="text" value={{this.cpf}} />
+
+  <button type="submit">Cadastrar</button>
+</form>

@@ -1,7 +1,19 @@
-{{page-title "ApiEmber"}}
+{{!--app/templates/application.hbs--}}
+{{page-title "API EMBER"}}
 
-{{! The following component displays Ember's default welcome message. }}
-<WelcomePage />
-{{! Feel free to remove this! }}
-
+<main>
+  <nav class="nav">
+    <a class="left_nav_div" href="/">Hey, World!</a>
+    <div class="center_nav_div">
+      <li>Men</li>
+      <li>Women</li>
+      <li>Kids</li>
+      <li>Sale</li>
+    </div>
+    <div class="right_nav_div">
+      <a href="/signin" class="login_btn_nav">Login</a>
+      <a href="/signup" class="signup_btn_nav">Cadastro</a>
+    </div>
+  </nav>
 {{outlet}}
+</main>

@@ -1,1 +1,152 @@
-/* Ember supports plain CSS out of the box. More info: https://cli.emberjs.com/release/advanced-use/stylesheets/ */
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/************* Home Page ****************/
+.home_title {
+  text-align: start;
+  padding-left: 2rem;
+  font-size: large;
+}
+.items_container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  padding: 2rem;
+}
+.item_card {
+  background: white;
+  border: 0.1rem solid #ddd;
+  border-radius: 0.3rem;
+  box-shadow: 0 0.1rem 0.2rem rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  padding: 1rem;
+  text-align: center;
+  width: 20rem;
+}
+.item_image {
+  max-width: 100%;
+  height: auto;
+  border-bottom: 1px solid #ddd;
+  margin-bottom: 1rem;
+}
+.item_title {
+  font-size: 1.25rem;
+  margin: 0.5rem 0;
+}
+.item_price {
+  color: #f57732;
+  font-size: 1rem;
+  margin: 0.5rem 0;
+}
+.item_description {
+  font-size: 0.875rem;
+  color: #666;
+}
+/************* Home Page ****************/
+
+/************* Nav Bar ****************/
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 5%;
+  list-style: none;
+  background: black;
+  color: white;
+  padding: 0.5rem 2rem;
+}
+
+.left_nav_div {
+  cursor: pointer;
+  text-decoration: none;
+  color: inherit;
+  font-size: large;
+}
+
+.center_nav_div {
+  cursor: pointer;
+  display: flex;
+  gap: 5%;
+  transition: 0.5s ease-in-out;
+}
+
+.center_nav_div li:hover {
+  color: #f57732;
+  transition: 0.5s ease-in-out;
+}
+
+.right_nav_div {
+  display: flex;
+  flex-direction: column;
+  text-align: right;
+}
+
+.right_nav_div a {
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.login_btn_nav {
+  font-size: large;
+  color: #f57732;
+}
+
+.signup_btn_nav {
+  font-size: x-small;
+  color: inherit;
+  transition: 0.5s ease-in-out;
+}
+
+.signup_btn_nav:hover,
+.login_btn_nav:hover {
+  text-decoration: underline;
+  transition: 0.5s ease-in-out;
+}
+
+/************* Nav Bar ****************/
+
+/************* Sign up ****************/
+.form_signup {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+}
+
+.form_signup input {
+  margin-bottom: 0.5rem;
+  border-radius: 0.2rem;
+}
+
+.form_signup button,
+.form_signin button {
+  background: #f57732;
+  font-weight: bold;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  border: 0.1rem solid #780101;
+  cursor: pointer;
+}
+
+/************* Sign up ****************/
+
+/************* Sign in ****************/
+.form_signin {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+}
+
+.form_signin input {
+  margin-bottom: 0.5rem;
+  border-radius: 0.2rem;
+}
+
+/************* Sign in ****************/

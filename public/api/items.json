@@ -1,0 +1,26 @@
+[
+  {
+    "title": "Sneakers Shoes",
+    "image": "/img.png",
+    "price": 100,
+    "description": "Comfortable running shoes for everyday use."
+  },
+  {
+    "title": "Sneakers Boots",
+    "image": "/img_1.png",
+    "price": 150,
+    "description": "Durable boots for hiking and outdoor adventures."
+  },
+  {
+    "title": "Sneakers",
+    "image": "/img_2.png",
+    "price": 80,
+    "description": "Stylish sneakers for casual wear."
+  },
+  {
+    "title": "Sneakers Top",
+    "image": "/img_3.png",
+    "price": 380,
+    "description": "Sneakers for a not casual wear."
+  }
+]
