@@ -5,47 +5,54 @@ body {
 }
 
 /************* Home Page ****************/
-.home_title {
+.home-title {
   text-align: start;
   padding-left: 2rem;
   font-size: large;
 }
-.items_container {
+
+.items-container {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   gap: 2rem;
   padding: 2rem;
 }
-.item_card {
+
+.item-card {
   background: white;
   border: 0.1rem solid #ddd;
   border-radius: 0.3rem;
-  box-shadow: 0 0.1rem 0.2rem rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0.1rem 0.2rem rgb(0 0 0 / 10%);
   overflow: hidden;
   padding: 1rem;
   text-align: center;
   width: 20rem;
 }
-.item_image {
+
+.item-image {
   max-width: 100%;
   height: auto;
   border-bottom: 1px solid #ddd;
   margin-bottom: 1rem;
 }
-.item_title {
+
+.item-title {
   font-size: 1.25rem;
   margin: 0.5rem 0;
 }
-.item_price {
+
+.item-price {
   color: #f57732;
   font-size: 1rem;
   margin: 0.5rem 0;
 }
-.item_description {
+
+.item-description {
   font-size: 0.875rem;
   color: #666;
 }
+
 /************* Home Page ****************/
 
 /************* Nav Bar ****************/
@@ -60,49 +67,49 @@ body {
   padding: 0.5rem 2rem;
 }
 
-.left_nav_div {
+.left-nav-div {
   cursor: pointer;
   text-decoration: none;
   color: inherit;
   font-size: large;
 }
 
-.center_nav_div {
+.center-nav-div {
   cursor: pointer;
   display: flex;
   gap: 5%;
   transition: 0.5s ease-in-out;
 }
 
-.center_nav_div li:hover {
+.center-nav-div li:hover {
   color: #f57732;
   transition: 0.5s ease-in-out;
 }
 
-.right_nav_div {
+.right-nav-div {
   display: flex;
   flex-direction: column;
   text-align: right;
 }
 
-.right_nav_div a {
+.right-nav-div a {
   cursor: pointer;
   text-decoration: none;
 }
 
-.login_btn_nav {
+.login-btn-nav {
   font-size: large;
   color: #f57732;
 }
 
-.signup_btn_nav {
+.signup-btn-nav {
   font-size: x-small;
   color: inherit;
   transition: 0.5s ease-in-out;
 }
 
-.signup_btn_nav:hover,
-.login_btn_nav:hover {
+.signup-btn-nav:hover,
+.login-btn-nav:hover {
   text-decoration: underline;
   transition: 0.5s ease-in-out;
 }
@@ -110,7 +117,7 @@ body {
 /************* Nav Bar ****************/
 
 /************* Sign up ****************/
-.form_signup {
+.form-signup {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -118,13 +125,13 @@ body {
   font-weight: bold;
 }
 
-.form_signup input {
+.form-signup input {
   margin-bottom: 0.5rem;
   border-radius: 0.2rem;
 }
 
-.form_signup button,
-.form_signin button {
+.form-signup button,
+.form-signin button {
   background: #f57732;
   font-weight: bold;
   padding: 0.5rem;
@@ -136,7 +143,7 @@ body {
 /************* Sign up ****************/
 
 /************* Sign in ****************/
-.form_signin {
+.form-signin {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -144,7 +151,7 @@ body {
   font-weight: bold;
 }
 
-.form_signin input {
+.form-signin input {
   margin-bottom: 0.5rem;
   border-radius: 0.2rem;
 }

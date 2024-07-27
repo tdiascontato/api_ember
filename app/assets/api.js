@@ -1,7 +1,7 @@
 // app/assets/api.js
-const axios = require('axios');
+import axios from 'axios';
 
-const api = async (data_obj) => {
+export const api = async (data_obj) => {
   const { url, method, headers, params, data } = data_obj;
 
   try {
@@ -23,7 +23,7 @@ const api = async (data_obj) => {
   }
 };
 
-module.exports = api;
+// module.exports = api;
 
 // api({
 //   url: 'https://jsonplaceholder.typicode.com/posts',
