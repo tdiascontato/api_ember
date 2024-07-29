@@ -1,18 +1,20 @@
 // app/services/signup.js
 import Service from '@ember/service';
-import api from '../assets/api';
+import { api } from '../assets/api';
 
 export default class SignupService extends Service {
-  async signup(userData) {
+  async register(data) {
     try {
       const response = await api({
-        url: 'http://localhost:8080/user/signup',
+        url: 'http://localhost:8080/signup',
         method: 'POST',
-        data: userData,
+        data: JSON.stringify(data),
       });
+
+      console.log('POST response:', response);
       return response;
     } catch (error) {
-      console.error('Failed to signup:', error);
+      console.error('POST error:', error);
       throw error;
     }
   }

@@ -23,13 +23,3 @@ export const api = async (data_obj) => {
   }
 };
 
-// module.exports = api;
-
-// api({
-//   url: 'https://jsonplaceholder.typicode.com/posts',
-//   method: 'GET'
-// }).then(response => {
-//   console.log('GET response:', response);
-// }).catch(error => {
-//   console.error('GET error:', error);
-// });

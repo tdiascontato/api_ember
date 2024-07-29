@@ -1,4 +1,5 @@
 {{!-- app/templates/signup.hbs --}}
+{{!-- app/templates/signup.hbs --}}
 {{page-title "Signup"}}
 
 <h2 class="signup-title">Signup</h2>
@@ -7,22 +8,22 @@
 
   <div class="form-group">
     <label for="name">Name</label>
-    <input type="text" id="name" value={{this.model.name}} {{on "input" this.updateField "name"}} required>
+    <input type="text" id="name" value={{this.model.name}} {{on "input" (fn this.updateField "name")}} required>
   </div>
 
   <div class="form-group">
     <label for="email">Email</label>
-    <input type="email" id="email" value={{this.model.email}} {{on "input" this.updateField "email"}} required>
+    <input type="email" id="email" value={{this.model.email}} {{on "input" (fn this.updateField "email")}} required>
   </div>
 
   <div class="form-group">
     <label for="password">Password</label>
-    <input type="password" id="password" value={{this.model.password}} {{on "input" this.updateField "password"}} required>
+    <input type="password" id="password" value={{this.model.password}} {{on "input" (fn this.updateField "password")}} required>
   </div>
 
   <div class="form-group">
     <label for="cpf">CPF</label>
-    <input type="text" id="cpf" value={{this.model.cpf}} {{on "input" this.updateField "cpf"}} required>
+    <input type="text" id="cpf" value={{this.model.cpf}} {{on "input" (fn this.updateField "cpf")}} required>
   </div>
 
   <button type="submit">Signup</button>
